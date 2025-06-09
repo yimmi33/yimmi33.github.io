@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Creado por Kevin Quesada :) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabajo Social</title>
+
+  <!-- Fuentes y estilos -->
+  <link rel="stylesheet" href="CSS/stil.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- BOTÓN PARA CAMBIAR TEMA -->
+  <div class="switch-tema">
+    <label>
+      <input type="checkbox" id="toggle-tema">
+      🌙 Modo Oscuro
+    </label>
+  </div>
+
+  <!-- ENCABEZADO CON IMAGEN Y TEXTO -->
+  <header class="encabezado-dual">
+    <img src="imagenes/perspectiva.png" alt="Salud Mental" class="img-encabezado" />
+    <div class="texto-encabezado">
+      <h1>PERSPECTIVA DE GENERO</h1>
+      <p>Una herramienta para comprender y transformar las desigualdades sociales entre géneros</p>
+    </div>
+
+    <!-- BOTÓN MENÚ RESPONSIVE -->
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navegacion" id="menu">
+    <ul>
+      <li><a href="pages/perspectiva.html">Perspectiva</a></li>
+      <li><a href="pages/infografia.html">Infografía</a></li>
+      <li><a href="pages/cuadro_comparativo.html">Cuadro Comparativo</a></li>
+      <li><a href="pages/linea_t.html">Línea de Tiempo</a></li>
+      <li><a href="pages/mapa.html">Mapa Conceptual</a></li>
+      <li><a href="pages/nube_palabras.html">Nube de Palabras</a></li>
+      <li><a href="pages/Documento.html">Documento</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECCIÓN DE INTEGRANTES -->
+  <section id="anexos">
+    <h2>INTEGRANTES</h2>
+    <div class="integrantes">
+      <div class="integrante">
+        <img src="imagenes/img.jpg" alt="YIMMI ALEXANDER SALGADO NARVAEZ">
+        <p>YIMMI ALEXANDER SALGADO NARVAEZ</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/img.jpg" alt="JUAN SEBASTIÁN SALAZAR SÁNCHEZ">
+        <p>JUAN SEBASTIÁN SALAZAR SÁNCHEZ</p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/img.jpg" alt="DIANA CAROLINA DUCUARA DELGADO ">
+        <p>DIANA CAROLINA DUCUARA DELGADO </p>
+      </div>
+      <div class="integrante">
+        <img src="imagenes/img.jpg" alt="LAURA ALEJANDRA RODRÍGUEZ BÁRCENAS">
+        <p>LAURA ALEJANDRA RODRÍGUEZ BÁRCENAS</p>
+      </div>
+    
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <p>&copy; 2025 Trabajo Social - Perspectiva de GENERO</p>
+  </footer>
+
+  <!-- SCRIPT PARA CAMBIO DE TEMA Y MENÚ -->
+  <script>
+    // Tema
+    const toggle = document.getElementById('toggle-tema');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('modo-oscuro');
+    });
+
+    // Menú responsive
+    const btnMenu = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    btnMenu.addEventListener('click', () => {
+      menu.classList.toggle('mostrar');
+    });
+  </script>
+</body>
+</html>
